@@ -59,3 +59,29 @@ function countPrimes(a,b) {
     }
     return count;
 }
+
+/*
+    Function to Calculate the Product of Coefficients a and b for the
+    quadratic expression that produces the maximum number of primes
+    for consecutive values of n, starting with n=0
+    quadraticPrimes(200)  returns -4925
+    quadraticPrimes(500)  returns -18901
+    quadraticPrimes(800)  returns -43835
+    quadraticPrimes(1000) returns -59231
+
+*/
+function quadraticPrimes(range) {
+    let winningProduct = 0, winningCount = 0;
+    for (let b=2;b<=range;b++) {
+        if (!isPrime(b)) continue;
+        for (let a=-range+1;a<=range;a++) {
+            if ((b===2 && a%2===1) || (a%2==0)) continue;
+            let currentCount = countPrimes(a,b);
+            if (currentCount > winningCount) {
+                winningProduct = a*b;
+                winningCount = currentCount;
+            }
+        }
+    }
+    return winningProduct;
+}
