@@ -28,5 +28,22 @@
         <p><span class="terms">e.g. |11| = 11 and |-4| = 4</span></p>
         <p>The aim is to find the product of the coefficients, a and b, for the quadratic expression that produces the maximum number of primes for consecutive values of n, starting with n=0.</p>
     </section>
+
+    <!-- Set Up Form-->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1 and 1000 (e.g. 200)" title="Enter whole number between 1 and 1000 (e.g. 200)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+    </section>
 </body>
 </html>
