@@ -18,3 +18,20 @@ The aim is to find the product of the coefficients, a and b, for the quadratic e
 
 Information at [Project Euler 027](https://projecteuler.net/problem=27)
 
+## UX
+
+**User Stories**
+
+As a user, I expect the function `quadraticPrimes(200)` to return a number.
+
+As a user, I expect the function `quadraticPrimes(200)` to return -4925.
+
+As a user, I expect the function `quadraticPrimes(500)` to return -18901.
+
+As a user, I expect the function `quadraticPrimes(800)` to return -43835.
+
+As a user, I expect the function `quadraticPrimes(1000)` to return -59231.
+
+**Information Architecture**
+
+The function `quadraticPrimes(range)` returns a number, where `range` is a number between 1 and 1000.
