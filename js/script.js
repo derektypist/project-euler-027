@@ -74,7 +74,7 @@ function quadraticPrimes(range) {
     let winningProduct = 0, winningCount = 0;
     for (let b=2;b<=range;b++) {
         if (!isPrime(b)) continue;
-        for (let a=-range+1;a<=range;a++) {
+        for (let a=-range+1;a<range;a++) {
             if ((b===2 && a%2===1) || (a%2==0)) continue;
             let currentCount = countPrimes(a,b);
             if (currentCount > winningCount) {
