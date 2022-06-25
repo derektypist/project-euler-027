@@ -19,3 +19,14 @@ const PRIMES = Array(50000).fill(false);
         if (isPrime[i]) PRIMES[2*i+3] = true;
     }
 })(50000);
+
+// Function to Check if number num is prime
+function isPrime(num) {
+    if (num<2) return false;
+    if (num !== undefined) return PRIMES[num];
+    const sqrt = parseInt(Math.sqrt(num));
+    for (let i=2;i<=sqrt;i++) {
+        if (num%i===0) return PRIMES[num] = false;
+    }
+    return PRIMES[num] = true;
+}
