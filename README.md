@@ -55,3 +55,21 @@ Allows the user to enter a number (range) as well as getting the product of the 
 
 Uses HTML5, CSS3, JavaScript, Google Fonts and Bootstrap 5.2.0-Beta1.
 
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-027) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
