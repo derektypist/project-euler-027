@@ -20,7 +20,7 @@ const PRIMES = Array(50000).fill(false);
     }
 })(50000);
 
-// Function to Check if number num is prime
+// Function to Check if the number num is a prime
 function isPrime(num) {
     if (num<2) return false;
     if (num !== undefined) return PRIMES[num];
@@ -29,4 +29,22 @@ function isPrime(num) {
         if (num%i===0) return PRIMES[num] = false;
     }
     return PRIMES[num] = true;
+}
+
+// Function to Get Number Information (including Invalid Input)
+function getNumberInfo() {
+    // Set Up Variable
+    let txt = "";
+    // Get the value of the input field
+    let num = document.getElementById("mynumber").value;
+    // Check if the input is valid
+    if (isNaN(num) || num.toString().length == 0 || num<1 || num>1000 || !Number.isInteger(Number(num))) {
+        txt += `Invalid Input.  Please enter a whole number between 1 and 1000.`;
+    } else {
+        txt += `You have entered the number ${num}.<p>`;
+        txt += `Product is ${quadraticPrimes(num)}.`;
+    }
+
+    // Display Information in the Browser
+    document.getElementById("numinfo").innerHTML = txt;
 }
