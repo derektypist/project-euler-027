@@ -48,3 +48,14 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+// Function to Count the Number of Primes
+function countPrimes(a,b) {
+    let output = b, n=0, count = 0;
+    while (isPrime(output)) {
+        count++;
+        n++;
+        output = n**2 + (a*n) + b;
+    }
+    return count;
+}
