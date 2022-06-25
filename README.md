@@ -20,7 +20,18 @@ Information at [Project Euler 027](https://projecteuler.net/problem=27)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 2 and 1000 in the input field and click on the Submit Button.  You will see the product of the coefficient of a and b that produces the maximum primes for consecutive values of n, starting with n = 0.  Except when you have made an invalid input.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
+
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 2 or greater than 1000
+- Entering a number but it is not an integer
 
 As a user, I expect the function `quadraticPrimes(200)` to return a number.
 
@@ -34,4 +45,4 @@ As a user, I expect the function `quadraticPrimes(1000)` to return -59231.
 
 **Information Architecture**
 
-The function `quadraticPrimes(range)` returns a number, where `range` is a number between 1 and 1000.
+The function `quadraticPrimes(range)` returns a number, where `range` is a number between 2 and 1000.
