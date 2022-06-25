@@ -38,8 +38,8 @@ function getNumberInfo() {
     // Get the value of the input field
     let num = document.getElementById("mynumber").value;
     // Check if the input is valid
-    if (isNaN(num) || num.toString().length == 0 || num<1 || num>1000 || !Number.isInteger(Number(num))) {
-        txt += `Invalid Input.  Please enter a whole number between 1 and 1000.`;
+    if (isNaN(num) || num.toString().length == 0 || num<2 || num>1000 || !Number.isInteger(Number(num))) {
+        txt += `Invalid Input.  Please enter a whole number between 2 and 1000.`;
     } else {
         txt += `You have entered the number ${num}.<p>`;
         txt += `Product is ${quadraticPrimes(num)}.`;
